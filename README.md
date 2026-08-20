@@ -1,58 +1,62 @@
-# Fiuu Mobile XDK Documentation
+# Fiuu Mobile XDK Integration Documentation
 
-Welcome to the **Fiuu Mobile XDK Integration Guide** — a documentation site designed to help merchants and partners integrate secure payment capabilities into their mobile applications using the **Fiuu Mobile XDK**.
+Welcome to the **Fiuu Mobile XDK Integration Guide** — a documentation site designed to help partners and merchants seamlessly integrate secure payment capabilities into mobile applications across multiple platforms and frameworks.
 
-## 📘 Overview
+## Overview
 
-The **Fiuu Mobile XDK** is a mobile payment software development kit that provides a pre-integrated connection to the Fiuu payment gateway. It handles payment initiation, channel selection, status tracking, and in-app redirection across native, cross-platform, and hybrid mobile frameworks — so merchants do not need to build complex payment flows from scratch.
+The **Fiuu Mobile XDK** is a mobile payment software development kit (SDK) that provides a pre-integrated connection to the Fiuu payment gateway. It handles payment initiation, channel selection, status tracking, and in-app redirection — so you do not need to build complex payment flows from scratch.
 
-## 🛠 Requirements
-
-- Registered Fiuu merchant account with API credentials
-- Mobile app project targeting a supported framework (see Documentation Structure above)
-- Network access to the Fiuu payment gateway
-
-## 🚀 Getting Started
+## Getting Started
 
 To begin your integration journey:
 
-1. Visit the documentation site and open the **Introduction** page.
-2. Read **Overview & Prerequisites** for platform requirements.
-3. Review **Payment Parameters** for the full list of `mp_*` parameters.
+1. Visit the documentation site: https://fiuupayment.github.io/XDK-Webview/
+2. Navigate to the **Introduction** section.
+3. Review [Overview & Prerequisites](https://fiuupayment.github.io/XDK-Webview/docs/overview-and-prerequisites/).
 4. Follow the integration guide for your framework.
-5. Configure **Deeplink Setup** and **Apple Pay Setup** as needed.
 
-## 🧩 Key Features
+## Key Features
 
-- **Pre-integrated payment flow** to the Fiuu payment gateway
-- **Multi-framework support** across native Android, native iOS, and cross-platform/hybrid stacks
-- **E-wallet, online banking (FPX), and card payments**
-- **Apple Pay and Google Pay** support
-- **Cash channel payments** with payment instruction screens
-- **Express mode** for direct channel routing
-- **Deeplink redirection** for e-wallet and banking flows
+- **12 framework guides** — Native Android, iOS, Flutter, React Native, Expo, Ionic Capacitor, Cordova, and .NET MAUI
+- **Complete `mp_*` parameter reference** — Mandatory fields, optional settings, Apple Pay, Google Pay, and cash channel support
+- **Environment configuration** — Production, UAT, and Sandbox environments
+- **Express mode** — Direct channel routing for subscribed payment methods
+- **Deeplink redirection** — E-wallet and online banking return-to-app flows
+- **Response handling** — Payment result parsing and checksum verification
 
-## 📂 Documentation Structure
+## Documentation Structure
 
-- **Introduction**: What the Fiuu Mobile XDK is and how the integration flow works
-- **Overview & Prerequisites**: Platform requirements before integration
-- **Payment Parameters**: Full list of `mp_*` parameters used to initiate a payment
-- **Core Integration**: Core integration steps common across frameworks
-- **Response Handling**: How to parse and verify payment results
-- **Deeplink Setup**: Configuring deeplink redirection for e-wallet and banking flows
-- **Apple Pay Setup**: Enabling native Apple Pay support on iOS
-- **Frameworks**:
-  - **Native Android**: Android Library (Java), Android Kotlin
-  - **Native iOS**: Swift, Objective-C, SwiftUI, CocoaPods Framework
-  - **Cross-Platform & Hybrid**: Flutter, React Native, Expo, Ionic Capacitor, Cordova, .NET MAUI
-- **Support & Resources**: Support channels available for integrators
+- **Introduction**: What is Fiuu Mobile XDK and how it works
+- **Overview & Prerequisites**: Platform requirements and SDK repositories
+- **Payment Parameters**: Full `mp_*` parameter reference
+- **Core Integration**: Environment configuration, express mode, and channel filtering
+- **Response Handling**: Payment result parsing and checksum verification
+- **Deeplink Setup**: Mobile application deeplink redirection configuration
+- **Apple Pay Setup**: Apple Merchant ID and payment processing certificate setup
+- **Framework Integration Guides**: Step-by-step guides for each supported platform
+- **Support & Resources**: Contact channels, SDK repositories, and developer resources
 
-## 📞 Support
+## Supported Frameworks
+
+| Category | Frameworks |
+| -------- | ---------- |
+| **Native Android** | Android Library (Java), Android Kotlin |
+| **Native iOS** | Swift, Objective-C, SwiftUI, CocoaPods Framework |
+| **Cross-Platform & Hybrid** | Flutter, React Native, Expo, Ionic Capacitor, Cordova, .NET MAUI |
+
+## Requirements
+
+- Registered Fiuu merchant account with API credentials
+- Mobile development environment matching your framework's prerequisites
+- Deeplink scheme registered on the Fiuu Merchant Portal (for e-wallet and banking flows)
+
+## Support
 
 If you encounter any issues or need assistance, please reach out to our integration team:
 
-- Sales/Onboarding: sales@fiuu.com
+- Email: [support@fiuu.com](mailto:support@fiuu.com)
+- Developer Forum: [t.me/FiuuDeveloperForum](https://t.me/FiuuDeveloperForum)
 
-## 📄 License
+## License
 
 This documentation is proprietary and intended for authorized partners and merchants only.
